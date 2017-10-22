@@ -1,0 +1,45 @@
+#reviewsListContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewContainer{
+  display: flex;
+  flex-direction: column;
+  border: 0px solid lightgray;
+  padding: 5px;
+
+  .reviewHeader {
+    display: flex;
+    flex-direction: row;
+
+    .authorImage{
+      width:30px;
+      height: 30px;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+
+    .authorName {
+      margin: 0;
+      align-self: center;
+    }
+  }
+  .address {
+    margin: 2px;
+    text-overflow: ellipsis;
+    font-family: Helvetica;
+    font-weight: 500;
+    color: #484848;
+    margin-left: 5px;
+  }
+  .reviewDivider {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+  }
+}
+
+
+
+

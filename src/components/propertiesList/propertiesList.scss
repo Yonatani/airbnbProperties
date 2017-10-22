@@ -1,0 +1,60 @@
+#propertiesListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.propertyContainer {
+  overflow: hidden;
+  display: flex;
+  width: 30%;
+  margin: 10px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: lightgray;
+  padding: 5px;
+
+  .propertyInnerContainer{
+    width: 100%;
+
+    .propertyImage {
+      padding: 0;
+      margin: 0;
+      object-fit: fill;
+      height:300px;
+      width: 100%;
+    }
+    .upperDetails {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .title{
+        margin: 4px;
+        text-overflow: ellipsis;
+        font-family: Helvetica;
+        color: #484848;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 20px;
+      }
+
+      .price {
+        display: inline-block;
+        font-family: Helvetica;
+        color: #484848;
+        margin: 5px;
+      }
+    }
+    .address {
+      margin: 2px;
+      text-overflow: ellipsis;
+      font-family: Helvetica;
+      font-weight: 500;
+      color: #484848;
+      margin-left: 5px;
+    }
+  }
+}
+
